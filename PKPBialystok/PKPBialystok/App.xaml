@@ -1,0 +1,25 @@
+﻿<Application x:Class="PKPBialystok.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PKPBialystok"
+             xmlns:viewModel="clr-namespace:PKPBialystok.MVVM.ViewModel"
+             xmlns:view="clr-namespace:PKPBialystok.MVVM.View"
+             StartupUri="Windows/LoginWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <DataTemplate DataType="{x:Type viewModel:EmployeeLoginViewModel}">
+                <view:EmployeeLoginView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:OrderDisplayLoginViewModel}">
+                <view:OrderDisplayLoginView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SelfServiceCheckoutLoginViewModel}">
+                <view:SelfServiceCheckoutLoginView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
