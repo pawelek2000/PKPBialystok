@@ -29,6 +29,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,8 +55,23 @@
     <ApplicationIcon>PKPIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Caliburn.Micro.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Caliburn.Micro.Core.4.0.173\lib\netstandard2.0\Caliburn.Micro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.0.4.3, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.4\lib\net452\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.3.0.3, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.3.0\lib\net452\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -79,19 +96,56 @@
     </Compile>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="MVVM\Model\Category.cs" />
+    <Compile Include="MVVM\Model\Dish.cs" />
+    <Compile Include="MVVM\Model\Order.cs" />
+    <Compile Include="MVVM\ViewModel\CartViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DishDetailsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\EmployeeLoginViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\HelpViewModel.cs" />
     <Compile Include="MVVM\ViewModel\LoginWindowViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MalpkaFoundationViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ManagerViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OrderDisplayLoginViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OrderDisplayViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\PaymentAcceptedViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\PaymentDeniedViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\PaymentViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SelfServiceCheckoutLoginViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\SelfServiceCheckoutViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\SSCStartViewModel.cs" />
+    <Compile Include="MVVM\View\CartView.xaml.cs">
+      <DependentUpon>CartView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\DishDetalisView.xaml.cs">
+      <DependentUpon>DishDetalisView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\EmployeeLoginView.xaml.cs">
       <DependentUpon>EmployeeLoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\HelpView.xaml.cs">
+      <DependentUpon>HelpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\MalpkaFoundationView.xaml.cs">
+      <DependentUpon>MalpkaFoundationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\OrderDisplayLoginView.xaml.cs">
       <DependentUpon>OrderDisplayLoginView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\PaymentAcceptedView.xaml.cs">
+      <DependentUpon>PaymentAcceptedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\PaymentDeniedView.xaml.cs">
+      <DependentUpon>PaymentDeniedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\PaymentView.xaml.cs">
+      <DependentUpon>PaymentView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\SelfServiceCheckoutLoginView.xaml.cs">
       <DependentUpon>SelfServiceCheckoutLoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\SSCStartView.xaml.cs">
+      <DependentUpon>SSCStartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -99,8 +153,14 @@
     <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ManagerWindow.xaml.cs">
+      <DependentUpon>ManagerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\OrderDisplayWindow.xaml.cs">
       <DependentUpon>OrderDisplayWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SelfServiceCheckoutWindow.xaml.cs">
+      <DependentUpon>SelfServiceCheckoutWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +181,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,11 +193,25 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Fonts\" />
-    <Folder Include="MVVM\Model\" />
-    <Folder Include="Theme\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="MVVM\View\CartView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\DishDetalisView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\EmployeeLoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\HelpView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\MalpkaFoundationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -144,7 +219,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\PaymentAcceptedView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\PaymentDeniedView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\PaymentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\SelfServiceCheckoutLoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\SSCStartView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\ManagerButtonTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\MenuButtonTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,7 +255,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\ManagerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\OrderDisplayWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SelfServiceCheckoutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,5 +289,21 @@
   <ItemGroup>
     <Resource Include="PKPIcon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DishImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SmileyFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MalpkaFoundation.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ten projekt zawiera odwołania do pakietów NuGet, których nie ma na tym komputerze. Użyj przywracania pakietów NuGet, aby je pobrać. Aby uzyskać więcej informacji, zobacz http://go.microsoft.com/fwlink/?LinkID=322105. Brakujący plik: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
 </Project>

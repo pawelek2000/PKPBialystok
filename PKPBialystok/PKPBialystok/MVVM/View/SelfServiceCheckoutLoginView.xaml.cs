@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PKPBialystok.Windows;
 
 namespace PKPBialystok.MVVM.View
 {
@@ -23,6 +24,14 @@ namespace PKPBialystok.MVVM.View
         public SelfServiceCheckoutLoginView()
         {
             InitializeComponent();
+        }
+        private void SelfServiseCheckout_Click(object sender, RoutedEventArgs e)
+        {
+            var OrderDisplay = new SelfServiceCheckoutWindow();
+            var CurrentWindow = Application.Current.Windows[0];
+            CurrentWindow.Close();
+            OrderDisplay.Show();
+
         }
     }
 }

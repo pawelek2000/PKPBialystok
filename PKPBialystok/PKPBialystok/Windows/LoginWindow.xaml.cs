@@ -23,11 +23,6 @@ namespace PKPBialystok.Windows
         {
             InitializeComponent();
         }
-        private void OrderDisplay_Click(object sender, RoutedEventArgs e) 
-        {
-            var OrderDisplay = new OrderDisplayWindow();
-            OrderDisplay.Show();
-            Close();
-        }
+        
     }
 }

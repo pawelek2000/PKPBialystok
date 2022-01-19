@@ -7,7 +7,15 @@
              StartupUri="Windows/LoginWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
-            
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/ManagerButtonTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
             <DataTemplate DataType="{x:Type viewModel:EmployeeLoginViewModel}">
                 <view:EmployeeLoginView/>
             </DataTemplate>
@@ -19,7 +27,40 @@
             <DataTemplate DataType="{x:Type viewModel:SelfServiceCheckoutLoginViewModel}">
                 <view:SelfServiceCheckoutLoginView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SSCStartViewModel}">
+                <view:SSCStartView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:DishDetailsViewModel}">
+                <view:DishDetalisView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:HelpViewModel}">
+                <view:HelpView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:CartViewModel}">
+                <view:CartView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:MalpkaFoundationViewModel}">
+                <view:MalpkaFundationView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PaymentViewModel}">
+                <view:PaymentView/>
+            </DataTemplate>
             
+            <DataTemplate DataType="{x:Type viewModel:PaymentAcceptedViewModel}">
+                <view:PaymentAcceptedView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PaymentDeniedViewModel}">
+                <view:PaymentDeniedView/>
+            </DataTemplate>
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

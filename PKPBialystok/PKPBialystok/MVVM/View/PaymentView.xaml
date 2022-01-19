@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="PKPBialystok.MVVM.View.PaymentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PKPBialystok.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Border Margin="50"
+                BorderBrush="#4C3B4D"
+                BorderThickness="10"
+                CornerRadius="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical"
+                            Grid.Row="0">
+
+                    <TextBlock HorizontalAlignment="Center"
+                                               VerticalAlignment="Top"
+                                               FontSize="60"
+                                               Margin="50,250,50,0"
+                                               TextWrapping="Wrap" 
+                                               Foreground="#4c3b4d"
+                                               Text="Zbliż kartę płatniczą do terminalu PIN PAD."/>
+                </StackPanel>
+                <ProgressBar Grid.Row="1"
+                             Background="Transparent"
+                             Foreground="#61C9A8"
+                             Maximum="30"
+                             Value="{Binding ProgresBarValue}">
+                    
+                </ProgressBar>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

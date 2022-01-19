@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PKPBialystok.Windows"
+        xmlns:viewModel="clr-namespace:PKPBialystok.MVVM.ViewModel"
         mc:Ignorable="d"
         WindowState="Maximized"
         WindowStyle="None"
         Background="#FFEEDB">
+    <Window.DataContext>
+        <viewModel:OrderDisplayViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -59,5 +63,58 @@
                VerticalContentAlignment="Center"
                FontSize="80"
                Foreground="#4C3B4D"/>
+
+
+        <ItemsControl Grid.Row="3"
+                      ItemsSource="{Binding Orders}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Margin="72,50,0,0"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Height="120"
+		                        Width="120"
+		                        Background="#A53860"
+		                        Margin="20"
+		                        CornerRadius="30">
+
+                        <Label Content="{Binding OrderID}"
+                                   FontSize="60"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalContentAlignment="Center"
+                                   Foreground="#ffeedb"/>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <ItemsControl Grid.Row="3"
+                      Grid.Column="3"
+                      ItemsSource="{Binding DoneOrders}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Margin="72,50,0,0"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Height="120"
+		                        Width="120"
+		                        Background="#61C9A8"
+		                        Margin="20"
+		                        CornerRadius="30">
+
+                        <Label Content="{Binding OrderID}"
+                                   FontSize="60"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalContentAlignment="Center"
+                                   Foreground="#ffeedb"/>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
     </Grid>
 </Window>
