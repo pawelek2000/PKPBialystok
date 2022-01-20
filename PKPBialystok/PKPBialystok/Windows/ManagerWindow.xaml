@@ -7,7 +7,7 @@
         xmlns:viewModel="clr-namespace:PKPBialystok.MVVM.ViewModel"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="ManagerWindow" MinHeight="450" MinWidth="900">
+        Title="ManagerWindow" MinHeight="550" MinWidth="1000">
     <Window.DataContext>
         <viewModel:ManagerViewModel/>
     </Window.DataContext>
@@ -35,7 +35,9 @@
                 <ContentControl Content="{Binding CurrentView}"/>
             </Grid>
             <Grid x:Name="grid" Width="200" Background="#ADA8B6" RenderTransformOrigin="0.5,0.5" Grid.Column="0">
-                <Button x:Name="button" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Style="{StaticResource MaterialDesignFlatButton}" Click="Button_Click"
+                <Button x:Name="button" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="Button_Click"
+                        Background="Transparent"
+                        BorderThickness="0"
                         Command="{Binding MenuButtonCommand}">
                     <materialDesign:PackIcon Kind="Menu" Foreground="#FFEEDB"/>
                 </Button>
@@ -47,7 +49,8 @@
                                  Style="{StaticResource ManagerButtonTheme}"
                                  FontSize="18"
                                  Height="50"
-                                 Margin="1"/>
+                                 Margin="1"
+                                 Command="{Binding EmployeeViewCommand}"/>
 
                     <RadioButton Content="Statystyki Oddziału"
                                  Style="{StaticResource ManagerButtonTheme}"

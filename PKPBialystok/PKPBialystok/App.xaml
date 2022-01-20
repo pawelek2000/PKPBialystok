@@ -60,6 +60,10 @@
                 <view:PaymentDeniedView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:EmployeeListViewModel}">
+                <view:EmployeeListView/>
+            </DataTemplate>
+
 
         </ResourceDictionary>
     </Application.Resources>

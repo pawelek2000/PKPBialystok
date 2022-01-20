@@ -22,7 +22,16 @@ namespace PKPBialystok.Windows
         public LoginWindow()
         {
             InitializeComponent();
+            this.PreviewKeyDown += new KeyEventHandler(Handle123);
         }
-        
+        private void Handle123(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F1)
+            {
+                var OrderDisplay = new ManagerWindow();
+                OrderDisplay.Show();
+                Close();
+            }
+        }
     }
 }

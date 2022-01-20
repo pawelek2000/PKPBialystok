@@ -41,6 +41,18 @@ namespace PKPBialystok.Windows
             }
 
             MenuClosed = !MenuClosed;
+
+
+        }
+
+        private void HandleEsc(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                var OrderDisplay = new LoginWindow();
+                OrderDisplay.Show();
+                Close();
+            }
         }
     }
 }
