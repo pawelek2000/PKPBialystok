@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\App.xaml
-26715290250
+30-147161394
 
-601056026222
+681647320745
 19-1098674137
-MVVM\View\AccountsListView.xaml;MVVM\View\BranchStatisticsView.xaml;MVVM\View\CartView.xaml;MVVM\View\DishDetalisView.xaml;MVVM\View\DismissalDocumentView.xaml;MVVM\View\DocumentGeneratorView.xaml;MVVM\View\EmployeeListView.xaml;MVVM\View\EmployeeLoginView.xaml;MVVM\View\EmploymentDocumentView.xaml;MVVM\View\HelpView.xaml;MVVM\View\MalpkaFoundationView.xaml;MVVM\View\OrderDisplayLoginView.xaml;MVVM\View\PaymentAcceptedView.xaml;MVVM\View\PaymentDeniedView.xaml;MVVM\View\PaymentView.xaml;MVVM\View\RegisterView.xaml;MVVM\View\ReprimandDocumentView.xaml;MVVM\View\SelfServiceCheckoutLoginView.xaml;MVVM\View\SSCStartView.xaml;Theme\ManagerButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Windows\LoginWindow.xaml;Windows\MainWindow.xaml;Windows\ManagerWindow.xaml;Windows\OrderDisplayWindow.xaml;Windows\SelfServiceCheckoutWindow.xaml;
+MVVM\View\AccountsListView.xaml;MVVM\View\AvailableMenuView.xaml;MVVM\View\BranchStatisticsView.xaml;MVVM\View\CartView.xaml;MVVM\View\DishDetalisView.xaml;MVVM\View\DismissalDocumentView.xaml;MVVM\View\DocumentGeneratorView.xaml;MVVM\View\EmployeeListView.xaml;MVVM\View\EmployeeLoginView.xaml;MVVM\View\EmploymentDocumentView.xaml;MVVM\View\HelpView.xaml;MVVM\View\KitchenOrdersView.xaml;MVVM\View\MalpkaFoundationView.xaml;MVVM\View\OrderDisplayLoginView.xaml;MVVM\View\OrderNumberView.xaml;MVVM\View\PaymentAcceptedView.xaml;MVVM\View\PaymentDeniedView.xaml;MVVM\View\PaymentView.xaml;MVVM\View\RegisterView.xaml;MVVM\View\ReprimandDocumentView.xaml;MVVM\View\SelfServiceCheckoutLoginView.xaml;MVVM\View\SSCStartView.xaml;Theme\ManagerButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Windows\KitchenWindow.xaml;Windows\LoginWindow.xaml;Windows\MainWindow.xaml;Windows\ManagerWindow.xaml;Windows\OrderDisplayWindow.xaml;Windows\SelfServiceCheckoutWindow.xaml;
 
 True
 

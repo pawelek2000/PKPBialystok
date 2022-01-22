@@ -7,6 +7,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Border Margin="50"
+                BorderBrush="#4c3b4d"
+                BorderThickness="10"
+                CornerRadius="10"
+                Background="#A53860">
+            <StackPanel Orientation="Vertical"
+                            Grid.Row="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+
+                <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="100"
+                           TextWrapping="Wrap" 
+                           Foreground="#FFEEDB"
+                           Text="Płatnośc odrzucona."/>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>

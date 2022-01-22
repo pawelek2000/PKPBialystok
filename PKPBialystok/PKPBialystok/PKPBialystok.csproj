@@ -103,6 +103,7 @@
     <Compile Include="MVVM\Model\Order.cs" />
     <Compile Include="MVVM\Model\SaleStatistic.cs" />
     <Compile Include="MVVM\ViewModel\AccountsListViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\AvailableMenuViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BranchStatisticsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\CartViewModel.cs" />
     <Compile Include="MVVM\ViewModel\DishDetailsViewModel.cs" />
@@ -112,11 +113,14 @@
     <Compile Include="MVVM\ViewModel\EmployeeLoginViewModel.cs" />
     <Compile Include="MVVM\ViewModel\EmploymentDocumentViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HelpViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\KitchenOrdersViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\KitchenViewModel.cs" />
     <Compile Include="MVVM\ViewModel\LoginWindowViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MalpkaFoundationViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ManagerViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OrderDisplayLoginViewModel.cs" />
     <Compile Include="MVVM\ViewModel\OrderDisplayViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OrderNumberViewModel.cs" />
     <Compile Include="MVVM\ViewModel\PaymentAcceptedViewModel.cs" />
     <Compile Include="MVVM\ViewModel\PaymentDeniedViewModel.cs" />
     <Compile Include="MVVM\ViewModel\PaymentViewModel.cs" />
@@ -127,6 +131,9 @@
     <Compile Include="MVVM\ViewModel\SSCStartViewModel.cs" />
     <Compile Include="MVVM\View\AccountsListView.xaml.cs">
       <DependentUpon>AccountsListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\AvailableMenuView.xaml.cs">
+      <DependentUpon>AvailableMenuView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\BranchStatisticsView.xaml.cs">
       <DependentUpon>BranchStatisticsView.xaml</DependentUpon>
@@ -155,11 +162,17 @@
     <Compile Include="MVVM\View\HelpView.xaml.cs">
       <DependentUpon>HelpView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\KitchenOrdersView.xaml.cs">
+      <DependentUpon>KitchenOrdersView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\MalpkaFoundationView.xaml.cs">
       <DependentUpon>MalpkaFoundationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\OrderDisplayLoginView.xaml.cs">
       <DependentUpon>OrderDisplayLoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OrderNumberView.xaml.cs">
+      <DependentUpon>OrderNumberView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\PaymentAcceptedView.xaml.cs">
       <DependentUpon>PaymentAcceptedView.xaml</DependentUpon>
@@ -181,6 +194,9 @@
     </Compile>
     <Compile Include="MVVM\View\SSCStartView.xaml.cs">
       <DependentUpon>SSCStartView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\KitchenWindow.xaml.cs">
+      <DependentUpon>KitchenWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -234,6 +250,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\AvailableMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\BranchStatisticsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -270,11 +290,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\KitchenOrdersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\MalpkaFoundationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\OrderDisplayLoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\OrderNumberView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -311,6 +339,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Theme\MenuButtonTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\KitchenWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

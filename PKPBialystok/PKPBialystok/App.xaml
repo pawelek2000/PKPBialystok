@@ -92,6 +92,18 @@
                 <view:EmploymentDocumentView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:OrderNumberViewModel}">
+                <view:OrderNumberView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:KitchenOrdersViewModel}">
+                <view:KitchenOrdersView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:AvailableMenuViewModel}">
+                <view:AvailableMenuView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

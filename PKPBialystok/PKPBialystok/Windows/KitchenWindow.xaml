@@ -1,0 +1,52 @@
+﻿<Window x:Class="PKPBialystok.Windows.KitchenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:PKPBialystok.MVVM.ViewModel"
+        xmlns:local="clr-namespace:PKPBialystok.Windows"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Background="#FFEEDB">
+    <Window.DataContext>
+        <viewModel:KitchenViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Button Height="40"
+                        Width="248"
+                        Content="Strona początkowa"
+                        HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="20"
+                        FontSize="28"
+                        Background="#A53860"
+                        Foreground="#4C3B4D"
+                        Command="{Binding BackMainViewCommand}"/>
+
+        <Button Height="50"
+                Width="350"
+                Content="Dania do przygotowania"
+                FontSize="30"
+                HorizontalAlignment="Center"
+                Background="#61c9a8"
+                Foreground="#4C3B4D"
+                Command="{Binding KitchenOrdersViewCommand}" Margin="205,194,205,283"
+                Visibility="{Binding ButtonVisibility}"/>
+
+        <Button Height="50"
+                Width="350"
+                Content="Dostępne menu"
+                FontSize="30"
+                HorizontalAlignment="Center"
+                Background="#61c9a8"
+                Foreground="#4C3B4D"
+                Command="{Binding AvailableMenuViewCommand}" Margin="205,273,205,204"
+                Visibility="{Binding ButtonVisibility}"/> 
+
+        <ContentControl Margin="80"
+                        Content="{Binding CurrentView}">
+            
+        </ContentControl>
+    </Grid>
+</Window>

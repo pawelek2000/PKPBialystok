@@ -130,3 +130,11 @@ C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\Rep
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\DismissalDocumentView.baml
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\EmploymentDocumentView.baml
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\ReprimandDocumentView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\OrderNumberView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\OrderNumberView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\Windows\KitchenWindow.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\Windows\KitchenWindow.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\KitchenOrdersView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\KitchenOrdersView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\AvailableMenuView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\AvailableMenuView.baml

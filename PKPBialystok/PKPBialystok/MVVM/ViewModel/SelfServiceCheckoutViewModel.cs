@@ -21,6 +21,8 @@ namespace PKPBialystok.MVVM.ViewModel
         PaymentAcceptedViewModel PaymentAcceptedVM { get; set; }
         PaymentDeniedViewModel PaymentDeniedVM { get; set; }
         MalpkaFoundationViewModel MalpkaVM { get; set; }
+        OrderNumberViewModel OrderNumberVM { get; set; }
+
         public RelayCommand StartOrderingCommand { get; set; }
         public RelayCommand BackToStartCommand { get; set; }
         public RelayCommand AskForHelpCommand { get; set; }
@@ -40,6 +42,7 @@ namespace PKPBialystok.MVVM.ViewModel
             PaymentAcceptedVM = new PaymentAcceptedViewModel();
             PaymentDeniedVM = new PaymentDeniedViewModel();
             PaymentVM = new PaymentViewModel();
+            OrderNumberVM = new OrderNumberViewModel();
             CurrentView = null;
 
             PaymentTimer = new DispatcherTimer();
@@ -112,6 +115,7 @@ namespace PKPBialystok.MVVM.ViewModel
                 PaymentTimer.Tick += new EventHandler(UpdateProgresBar);
                 PaymentTimer.Interval = new TimeSpan(0, 0, 1);
                 PaymentTimer.Start();
+                PaymentVM = new PaymentViewModel();
                 CurrentView = PaymentVM;
                 MalpkaBackViewButton.Visibility = Visibility.Hidden;
                 MalpkaViewButton.Visibility = Visibility.Hidden;
@@ -198,13 +202,41 @@ namespace PKPBialystok.MVVM.ViewModel
             {
                 PaymentVM.ProgresBarValue = 30;
                 PaymentTimer.Stop();
-                CurrentView = PaymentAcceptedVM;
-                PaymentTimer.Tick += new EventHandler(PaymentAccepted);
+                Random random = new Random();
+                var rnd = random.Next(0, 3);
+                if (rnd == 2)
+                {
+                    CurrentView = PaymentDeniedVM;
+                    PaymentTimer.Tick += new EventHandler(PaymentEnd);
+                }
+                else
+                {
+                    CurrentView = PaymentAcceptedVM;
+                    PaymentTimer.Tick += new EventHandler(PaymentAccepted);
+                }
+                PaymentVM.ProgresBarValue = 30;
                 PaymentTimer.Start();
             }
         }
 
         public void PaymentAccepted(object sender, EventArgs e)
+        {
+            AcceptTime--;
+            if (AcceptTime == 0)
+            {
+                AcceptTime = 5;
+                PaymentTimer.Stop();
+                CurrentView = OrderNumberVM;
+                PaymentTimer.Tick += new EventHandler(PaymentEnd);
+                PaymentTimer.Start();
+
+            }
+
+        }
+
+
+
+        public void PaymentEnd(object sender, EventArgs e)
         {
             AcceptTime--;
             if (AcceptTime == 0)

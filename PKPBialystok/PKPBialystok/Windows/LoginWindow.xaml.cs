@@ -32,6 +32,12 @@ namespace PKPBialystok.Windows
                 OrderDisplay.Show();
                 Close();
             }
+            if (e.Key == Key.F2)
+            {
+                var OrderDisplay = new KitchenWindow();
+                OrderDisplay.Show();
+                Close();
+            }
         }
     }
 }
