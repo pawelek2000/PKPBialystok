@@ -96,14 +96,21 @@
     </Compile>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="MVVM\Model\Account.cs" />
     <Compile Include="MVVM\Model\Category.cs" />
     <Compile Include="MVVM\Model\Dish.cs" />
     <Compile Include="MVVM\Model\Employee.cs" />
     <Compile Include="MVVM\Model\Order.cs" />
+    <Compile Include="MVVM\Model\SaleStatistic.cs" />
+    <Compile Include="MVVM\ViewModel\AccountsListViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BranchStatisticsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\CartViewModel.cs" />
     <Compile Include="MVVM\ViewModel\DishDetailsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DismissalDocumentViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DocumentGeneratorViewModel.cs" />
     <Compile Include="MVVM\ViewModel\EmployeeListViewModel.cs" />
     <Compile Include="MVVM\ViewModel\EmployeeLoginViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\EmploymentDocumentViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HelpViewModel.cs" />
     <Compile Include="MVVM\ViewModel\LoginWindowViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MalpkaFoundationViewModel.cs" />
@@ -113,20 +120,37 @@
     <Compile Include="MVVM\ViewModel\PaymentAcceptedViewModel.cs" />
     <Compile Include="MVVM\ViewModel\PaymentDeniedViewModel.cs" />
     <Compile Include="MVVM\ViewModel\PaymentViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\RegisterViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ReprimandDocumentViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SelfServiceCheckoutLoginViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SelfServiceCheckoutViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SSCStartViewModel.cs" />
+    <Compile Include="MVVM\View\AccountsListView.xaml.cs">
+      <DependentUpon>AccountsListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BranchStatisticsView.xaml.cs">
+      <DependentUpon>BranchStatisticsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\CartView.xaml.cs">
       <DependentUpon>CartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\DishDetalisView.xaml.cs">
       <DependentUpon>DishDetalisView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\DismissalDocumentView.xaml.cs">
+      <DependentUpon>DismissalDocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\DocumentGeneratorView.xaml.cs">
+      <DependentUpon>DocumentGeneratorView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\EmployeeListView.xaml.cs">
       <DependentUpon>EmployeeListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\EmployeeLoginView.xaml.cs">
       <DependentUpon>EmployeeLoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\EmploymentDocumentView.xaml.cs">
+      <DependentUpon>EmploymentDocumentView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\HelpView.xaml.cs">
       <DependentUpon>HelpView.xaml</DependentUpon>
@@ -145,6 +169,12 @@
     </Compile>
     <Compile Include="MVVM\View\PaymentView.xaml.cs">
       <DependentUpon>PaymentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\RegisterView.xaml.cs">
+      <DependentUpon>RegisterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\ReprimandDocumentView.xaml.cs">
+      <DependentUpon>ReprimandDocumentView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\SelfServiceCheckoutLoginView.xaml.cs">
       <DependentUpon>SelfServiceCheckoutLoginView.xaml</DependentUpon>
@@ -200,6 +230,14 @@
     <Folder Include="Fonts\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="MVVM\View\AccountsListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\BranchStatisticsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\CartView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -208,11 +246,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\DismissalDocumentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\DocumentGeneratorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\EmployeeListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\EmployeeLoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\EmploymentDocumentView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -237,6 +287,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\PaymentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\RegisterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ReprimandDocumentView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -309,6 +367,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Employee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lorem_Ipsum.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />

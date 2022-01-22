@@ -56,19 +56,22 @@
                                  Style="{StaticResource ManagerButtonTheme}"
                                  FontSize="18"
                                  Height="50"
-                                 Margin="1"/>
+                                 Margin="1"
+                                 Command="{Binding SaleDetailsViewCommand}"/>
                     
                     <RadioButton Content="Menadżer Profili"
                                  Style="{StaticResource ManagerButtonTheme}"
                                  FontSize="18"
                                  Height="50"
-                                 Margin="1"/>
+                                 Margin="1"
+                                 Command="{Binding AccountsListViewCommand}"/>
                     
                     <RadioButton Content="Generator Dokumentów"
                                  Style="{StaticResource ManagerButtonTheme}"
                                  FontSize="18"
                                  Height="50"
-                                 Margin="1"/>
+                                 Margin="1"
+                                 Command="{Binding DocumentGeneratorViewCommand}"/>
                     
                  
                 </StackPanel>

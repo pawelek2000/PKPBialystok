@@ -64,6 +64,33 @@
                 <view:EmployeeListView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:BranchStatisticsViewModel}">
+                <view:BranchStatisticsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AccountsListViewModel}">
+                <view:AccountsListView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:RegisterViewModel}">
+                <view:RegisterView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:DocumentGeneratorViewModel}">
+                <view:DocumentGeneratorView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:DismissalDocumentViewModel}">
+                <view:DismissalDocumentView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ReprimandDocumentViewModel}">
+                <view:ReprimandDocumentView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:EmploymentDocumentViewModel}">
+                <view:EmploymentDocumentView/>
+            </DataTemplate>
 
         </ResourceDictionary>
     </Application.Resources>

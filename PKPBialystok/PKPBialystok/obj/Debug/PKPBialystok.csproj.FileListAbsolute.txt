@@ -116,3 +116,17 @@ C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\PKPBialystok.
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\PKPBialystok.pdb
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\EmployeeListView.g.cs
 C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\EmployeeListView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\BranchStatisticsView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\BranchStatisticsView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\AccountsListView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\RegisterView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\AccountsListView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\RegisterView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\DocumentGeneratorView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\DocumentGeneratorView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\DismissalDocumentView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\EmploymentDocumentView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\ReprimandDocumentView.g.cs
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\DismissalDocumentView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\EmploymentDocumentView.baml
+C:\Users\pwojc\Desktop\KCK_GIT\PKPBialystok\PKPBialystok\obj\Debug\MVVM\View\ReprimandDocumentView.baml
